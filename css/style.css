@@ -1,0 +1,116 @@
+:root {
+  --header-height: 70px;
+  --main-bg: #d5d5d5;
+  --main-trasition: all 0.3s ease;
+  --main-font-weight: 500;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+input {
+  outline: none;
+}
+.container {
+  max-width: 1240px;
+  margin: auto;
+}
+.slider-items img {
+  height: 600px;
+  width: 98vw;
+}
+.row-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.row-grid {
+  display: grid;
+  justify-content: space-between;
+}
+/*header------------------------- */
+header {
+  height: var(--header-height);
+  border-bottom: 1px solid #ddd;
+}
+header .row-flex {
+  align-items: center;
+}
+.header-logo img {
+  width: 100px;
+  cursor: pointer;
+}
+.header-nav nav ul {
+  display: flex;
+}
+.header-nav nav ul li {
+  padding: 0 10px;
+  transition: var(--main-trasition);
+  cursor: pointer;
+}
+.header-nav nav ul li a {
+  line-height: var(--header-height);
+  font-size: smaller;
+}
+.header-nav nav ul li a:hover {
+  background-color: var(--main-bg);
+}
+.header-search input {
+  height: 30px;
+  border: 1px solid black;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+/*hot-product */
+.hot-products .row-grid-hot-products {
+  grid-template-columns: repeat(5, auto);
+}
+.hot-products-item img {
+  width: 50%;
+}
+.hot-products-item1 img {
+  width: 50%;
+  height: 50%;
+}
+.hot-products-item2 img {
+  width: 50%;
+  height: 50%;
+}
+.hot-products-item3 img {
+  width: 50%;
+}
+.hot-products-item4 img {
+  width: 50%;
+}
+.hot-products-item > p {
+  font-weight: var(--main-font-weight);
+}
+.hot-products-item > span {
+  font-size: smaller;
+  font-weight: 300;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  padding: 50px 0 0 12px;
+  background-color: var(--main-bg);
+}
+.footer-items p:first-child {
+  font-weight: bolder;
+  margin-bottom: 12px;
+}
+.footer-items p {
+  font-weight: lighter;
+  line-height: 32px;
+}
+footer .row-grid {
+  grid-template-columns: repeat(4, 25%);
+}
